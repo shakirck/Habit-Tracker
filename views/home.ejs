@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <h3><a href="/">HABIT TRACKER</a></h3>
+    </nav>
+
+    <form action="/create" method="POST">
+        <input type="text" name="habit" id="habit-name" placeholder="Start a Habit ">
+        <div>
+            <button type="submit"> Create</button>
+
+        </div>
+    </form>
+
+    <div class="counter">
+        <h3>Total Habits So Far <span style="color: #05668D; font-size: 2.5rem; margin-left: 5px;"><%= totalHabits %>
+            </span></h3>
+    </div>
+    <ul id="list">
+
+
+        <% for(let habit of habits) {%>
+
+        <div class="list-container">
+            <div class="top-list">
+                <div class="list-item">
+                    <h3><%= habit.habit %> </h3>
+
+                </div>
+                <div class="list-item">
+                    <p><%= habit.createdTime %> </p>
+
+                </div>
+
+            </div>
+            <div class="bottom-list">
+                <div class="list-item">
+                    <p><%= age %> </p>
+
+                </div>
+
+            </div>
+            <div class="list-item habit-link">
+                <a href="/show-details/<%=habit._id  %> ">View</a>
+                <a style="background-color: red;" class="habit-link-dlt" href="/delete/<%=habit._id  %> ">Delete</a>
+
+            </div>
+
+        </div>
+        <% } %>
+    </ul>
+</body>
+
+</html>

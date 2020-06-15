@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habits</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+    <div class="container">
+        <div class="habit-name-heading">
+            <h2 class="habit"> <%= habit.habit %></h2>
+            <div class="nav-links">
+                <a class="dlt-link" href="/delete/<%=habit._id  %> ">Delete</a>
+                <a class="home-link" href="/">Home</a>
+            </div>
+
+        </div>
+        <div class="habit-details">
+            <div class="calendar">
+
+
+                <% let index = 0 %>
+                <% for(let day of days) {%>
+
+                <div class=" weekday <%= taskStatus[day] %>">
+                    <div class="day" id="<%= day  %> ">
+                        <h3><%= day %> </h3>
+                        <h2><%= weekDayNames[index] %> </h2>
+                        <div class="updator-links">
+                            <a href=" /update/<%=habit.id%>/<%=day%>/complete">
+                                <div class="complete-check">
+                                    <img class="check-icons" src="/images/tick.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="/update/<%=habit.id%>/<%=day%>/incomplete">
+                                <div class="incomplete-check">
+                                    <img class="check-icons" src="/images/criss-cross.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="status">
+                        <%= taskStatus[day] %>
+                    </div>
+                </div>
+
+                <% index++ ;} %>
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let days = document.getElementsByClassName('weekday');
+        console.log('loaded')
+        let today = days.item(6);
+        today.classList.add('today');
+    </script>
+</body>
+
+</html>

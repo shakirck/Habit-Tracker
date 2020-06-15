@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    margin-left: 10px;
+  
+}
+nav  a{
+    text-decoration: none;
+    color: #05668D;
+}
+
+.habit-name-heading {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.habit-name-heading a {
+    margin: 10px;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list-container {
+    border: 5px solid #05668D;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    flex-basis: 20%;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* font-size: 1.5rem; */
+    /* height: 50px; */
+}
+
+.top-list {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.bottom-list {
+    display: flex;
+    justify-content: space-between;
+    height: 30%;
+}
+
+.list-item {
+    padding: 10px;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.habit-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    justify-content: space-around;
+}
+
+.habit-link a {
+    text-decoration: none;
+    background-color: #05668D;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .3s ease-in;
+}
+
+.habit-link a:hover {
+    background-color: #679436;
+    border-radius: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+form input {
+    width: 70%;
+    border: 2px solid #05668D;
+    background-color: #dee2e4;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    font-size: 1.5rem;
+}
+
+form input:focus {
+    padding: 30px;
+    border: 5px solid #05668D;
+}
+
+form div {
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #679436;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Habit pages */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.today {
+    background-color: rgb(8, 250, 169);
+    transform: scale(1.3);
+}
+
+.weekday {
+    height: 200px;
+    width: 150px;
+    padding: 15px;
+    margin: 25px;
+    border-radius: 20px;
+    border: 10px solid #05668D;
+    position: relative;
+    transition: all .2s ease-in;
+}
+
+.weekday:hover {
+    transform: scale(1.3);
+}
+
+.complete {
+    border: 10px solid #679436;
+}
+
+.incomplete {
+    border: 10px solid rgb(255, 47, 47);
+}
+
+.complete-check {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    /* background-color: rgb(19, 148, 88); */
+}
+
+.incomplete-check {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    /* background-color: rgb(255, 47, 47); */
+}
+
+.day {
+    font-weight: 500;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.check-icons {
+    height: 30px;
+    width: 30px;
+}
+
+.updator-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status {
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.habit-check {
+    display: flex;
+    height: 65px;
+    width: 100px;
+    background-color: rgb(25, 26, 26);
+}
+
+input[type="checkbox"]:checked~label {
+    background: aqua;
+}
+
+.dlt-link {
+    display: block;
+    padding: 10px;
+    background-color: rgb(255, 47, 47);
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 150px;
+}
+
+.home-link {
+    display: block;
+    padding: 10px;
+    background-color: #679436;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 150px;
+}
+
+.nav-links {
+    margin: 0px auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}

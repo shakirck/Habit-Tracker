@@ -31,3 +31,6 @@ $ npm start
 
 
 ```
+![Home page](assets\images\Screenshot_2020-06-15 Home.png)
+
+![Habit Page](assets\images\habit-tracker.png)

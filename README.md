@@ -31,6 +31,6 @@ $ npm start
 
 
 ```
-![Home page](assets\images\Screenshot_2020-06-15 Home.png)
-
-![Habit Page](assets\images\habit-tracker.png)
+![Screenshot](https://github.com/shakirck/Habit-Tracker/blob/master/assets/images/Screenshot_2020-06-15%20Home.png)
+![Screenshot](https://github.com/shakirck/Habit-Tracker/blob/master/assets/images/habit-tracker.png)
+ 
